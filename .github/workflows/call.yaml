@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Call Reusable Pull Image Workflow
-        uses: github/example-action-repo/.github/workflows/reusable_pull_image_workflow.yaml@main
+        uses: zefirnikolov/reusable-pull-image-workflow/.github/workflows/docker-pull.yaml@main
         with:
           project-name: my-example-project
           image-name: alpine
