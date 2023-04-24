@@ -13,5 +13,5 @@ jobs:
         uses: github/example-action-repo/.github/workflows/reusable_pull_image_workflow.yaml@main
         with:
           project-name: my-example-project
-          image-name: alpine
+          image-name: ubuntu
           pull-image: true
