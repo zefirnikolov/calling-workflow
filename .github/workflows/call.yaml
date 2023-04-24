@@ -7,7 +7,7 @@ on:
 jobs:
   call_reusable_workflow:
     if: github.event.pull_request.merged == true
-    uses: github/example-action-repo/.github/workflows/reusable_pull_image_workflow.yaml@main
+    uses: https://github.com/zefirnikolov/reusable-pull-image-workflow/.github/workflows/reusable_pull_image_workflow.yaml@main
     with:
       project-name: my-example-project
       image-name: ubuntu
