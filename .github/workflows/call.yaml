@@ -7,5 +7,5 @@ jobs:
     uses: zefirnikolov/reusable-pull-image-workflow/.github/workflows/docker-pull.yaml@main
     with:
       project-name: my-example-project
-      image-name: ubuntu
+      image-name: ubuntu:20.04
       pull-image: true
