@@ -1,15 +1,12 @@
 name: Calling Workflow
 
-on:
-  pull_request:
-    types: [closed]
+on: [push]
 
 jobs:
   call_reusable_workflow:
     if: github.event.pull_request.merged == true
-
     uses: zefirnikolov/reusable-pull-image-workflow/.github/workflows/docker-pull.yaml@main
     with:
       project-name: my-example-project
-      image-name: alpine
+      image-name: ubuntu
       pull-image: true
