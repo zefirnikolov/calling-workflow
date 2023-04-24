@@ -1,0 +1,1 @@
+# a simple call to the reusable-pull-image-workflow repo
