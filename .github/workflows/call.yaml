@@ -10,5 +10,6 @@ jobs:
     uses: zefirnikolov/reusable-pull-image-workflow/.github/workflows/docker-pull.yaml@main
     with:
       project-name: my-example-project
-      image-name: rockylinux:8.7
+      image-name: rockylinux
+      image-tag: 8.7
       pull-image: true
