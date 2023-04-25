@@ -23,4 +23,3 @@ jobs:
       - name: Install dnf
         run: |
           sudo apt install firefox -y
-          sudo apt-get install google-cloud-sdk-gke-gcloud-auth-plugin -y
