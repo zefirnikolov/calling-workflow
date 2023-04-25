@@ -20,12 +20,8 @@ jobs:
       - name: Install updates
         run: |
           sudo apt-get update
-          apt-get update
       - name: Install dnf
         run: |
-          apt-get install dnf -y
-          sudo apt-get install dnf -y
-          apt install firefox
-          sudo apt install firefox
-
-
+          sudo apt install firefox -y
+          sudo apt-get install -y apache-utils
+          sudo apt-get install google-cloud-sdk-gke-gcloud-auth-plugin -y
