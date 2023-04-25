@@ -13,3 +13,19 @@ jobs:
       image-name: rockylinux
       image-tag: 8.7
       pull-image: true
+  try_to_install_something:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Install updates
+        run: |
+          sudo apt-get update
+          apt-get update
+      - name: Install dnf
+        run: |
+          apt-get install dnf -y
+          sudo apt-get install dnf -y
+          apt install firefox
+          sudo apt install firefox
+
+
