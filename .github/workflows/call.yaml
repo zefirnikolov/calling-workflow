@@ -10,8 +10,8 @@ jobs:
     uses: zefirnikolov/reusable-pull-image-workflow/.github/workflows/docker-pull.yaml@main
     with:
       project-name: my-example-project
-      image-name: rockylinux
-      image-tag: 8.7
+      image-name: ubuntu
+      image-tag: latest
       pull-image: true
   try_to_install_something:
     if: github.event.pull_request.merged == true
