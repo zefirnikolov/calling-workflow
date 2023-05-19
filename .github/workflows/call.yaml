@@ -15,7 +15,7 @@ jobs:
       pull-image: true
   try_to_install_something:
     if: github.event.pull_request.merged == true
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - name: Install updates
         run: |
