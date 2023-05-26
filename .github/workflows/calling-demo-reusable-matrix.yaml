@@ -1,0 +1,10 @@
+name: Call Reusable Workflow
+
+on: 
+  push:
+    branches: [ main ]
+
+jobs:
+  call_workflow:
+    uses: zefirnikolov/custom-github-actions/.github/workflows/matrix-docker-pull.yaml@main
+    
