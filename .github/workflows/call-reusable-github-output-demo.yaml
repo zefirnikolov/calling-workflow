@@ -9,6 +9,6 @@ jobs:
     uses: zefirnikolov/reusable-pull-image-workflow/.github/workflows/reusable-github-output-demo.yaml@main
     with:
       docker-image: ubuntu
-      stage: dev
+      stage: deve
       release-version: "0.0.1"
     
