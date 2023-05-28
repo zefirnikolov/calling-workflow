@@ -8,7 +8,7 @@ jobs:
   call_workflow:
     uses: zefirnikolov/reusable-pull-image-workflow/.github/workflows/reusable-github-output-demo.yaml@main
     with:
-      docker-image: ubuntu
+      docker-image: alpine
       stage: stag
       release-version: "0.0.1"
     
