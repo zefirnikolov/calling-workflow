@@ -1,0 +1,14 @@
+name: Call Reusable OUTPUT DEMO
+
+on: 
+  push:
+    branches: [ main ]
+
+jobs:
+  call_workflow:
+    uses: zefirnikolov/reusable-pull-image-workflow/.github/workflows/reusable-github-output-demo.yaml@main
+    with:
+      docker-image: ubuntu
+      stage: dev
+      release-version: "0.0.1"
+    
