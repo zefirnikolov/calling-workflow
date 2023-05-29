@@ -11,6 +11,7 @@ jobs:
       docker-image: alpine
       stage: stag
       release-version: "0.0.1"
+      
   second:
     needs: [call_workflow]
     uses: zefirnikolov/reusable-pull-image-workflow/.github/workflows/using-output-from-other-reusable.yaml@main
