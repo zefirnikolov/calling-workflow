@@ -16,4 +16,3 @@ jobs:
     uses: zefirnikolov/reusable-pull-image-workflow/.github/workflows/using-output-from-other-reusable.yaml@main
     with:
       docker-image: alpine
-
