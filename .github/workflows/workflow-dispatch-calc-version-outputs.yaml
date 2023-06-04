@@ -39,5 +39,5 @@ jobs:
     uses: zefirnikolov/reusable-pull-image-workflow/.github/workflows/create-helm-chart-artifacts.yaml@main
     with:
       docker-image: ubuntu
-      docker-tag: ${{ needs.calc-version.outputs.TAGGED_DOCKER_IMAGE }} # To transfer the output from the 1st to the other reusable workflow - It need to want it as an input. And you pass it here...
+      docker-tag: asd # To transfer the output from the 1st to the other reusable workflow - It need to want it as an input. And you pass it here...
       # https://docs.github.com/en/actions/using-workflows/reusing-workflows#using-outputs-from-a-reusable-workflow
