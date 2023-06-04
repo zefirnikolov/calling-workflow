@@ -6,7 +6,7 @@ on:
 
 jobs:
   call_workflow:
-    uses: zefirnikolov/reusable-pull-image-workflow/.github/workflows/reusable-github-output-demo.yaml@main
+    uses: zefirnikolov/reusable-pull-image-workflow/.github/workflows/calculate-version-artifacts.yaml@main
     with:
       docker-image: alpine
       stage: stag
@@ -14,6 +14,6 @@ jobs:
       
   second:
     needs: [call_workflow]
-    uses: zefirnikolov/reusable-pull-image-workflow/.github/workflows/using-output-from-other-reusable.yaml@main
+    uses: zefirnikolov/reusable-pull-image-workflow/.github/workflows/create-helm-chart-artifacts.yaml@main
     with:
       docker-image: alpine
