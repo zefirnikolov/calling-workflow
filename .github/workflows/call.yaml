@@ -1,12 +1,12 @@
 name: Calling Workflow
 
-on: 
-  pull_request:
-    types: [closed]
+on: push
+  # pull_request:
+  #   types: [closed]
 
 jobs:
   call_reusable_workflow:
-    if: github.event.pull_request.merged == true
+    # if: github.event.pull_request.merged == true
     uses: zefirnikolov/reusable-pull-image-workflow/.github/workflows/send-files-plus-docker-pull.yaml@main
     with:
       project-name: my-example-project
